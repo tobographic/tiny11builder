@@ -120,10 +120,6 @@ dism /image:c:\scratchdir /Remove-Package /PackageName:Microsoft-Windows-TabletP
 echo Removing Wallpapers:
 dism /image:c:\scratchdir /Remove-Package /PackageName:Microsoft-Windows-Wallpaper-Content-Extended-FoD-Package~31bf3856ad364e35~amd64~~10.0.22621.1265 > nul
 
-echo Removing OneDrive:
-takeown /f C:\scratchdir\Windows\System32\OneDriveSetup.exe
-icacls C:\scratchdir\Windows\System32\OneDriveSetup.exe /grant Administrators:F /T /C
-del /f /q /s "C:\scratchdir\Windows\System32\OneDriveSetup.exe"
 echo Removal complete!
 timeout /t 2 /nobreak > nul
 cls
