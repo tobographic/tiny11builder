@@ -4,6 +4,8 @@ tobographic fork of github.com/ntdevlabs/tiny11builder.
 
 This script is identical to the original by ntdevlabs, but retains Edge and OneDrive as I use those on occasion.
 
+Should work with 22621.1778 (current General Availability Channel as of 2023-05-24) but untested.
+
 What is removed:
 Clipchamp,
 News,
